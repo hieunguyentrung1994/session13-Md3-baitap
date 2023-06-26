@@ -1,13 +1,17 @@
+package bt01;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println(getArr());
 
         int[] arr = getArr();
-        int number;
-
-        
-
-
+        int maxnumber = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > maxnumber) {
+                maxnumber = arr[i];
+            }
+        }
+        System.out.println("số nguyên lớn nhất trong mảng là" + maxnumber );
     }
     private static int[] getArr(){
         int arr[] = new int[20];

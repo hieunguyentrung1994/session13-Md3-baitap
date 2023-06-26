@@ -1,2 +1,4 @@
-package bt12;public class Main {
+package bt12;
+
+public class Main {
 }
